@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARGen Inspection & Certification</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-slate-800">
+
+<!-- Navbar -->
+<nav class="bg-blue-900 fixed w-full z-10 top-0 left-0 shadow-md">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between items-center py-3">
+      
+      <!-- Logo + Name -->
+      <a href="Home.HTML" class="flex items-center">
+        <img src="Logo.png" alt="ARGEN Logo" class="h-10 w-auto">
+        <span class="ml-2 text-white font-bold text-lg">ARGEN Inspection & Certification Pvt. Ltd.</span>
+      </a>
+
+      <!-- Menu (Desktop) -->
+      <div class="hidden md:flex space-x-8">
+        <a href="Home.HTML" class="text-white hover:text-cyan-300 font-medium">Home</a>
+        <a href="About.HTML" class="text-white hover:text-cyan-300 font-medium">About</a>
+        <a href="Services.HTML" class="text-white hover:text-cyan-300 font-medium">Services</a>
+        <a href="Contact.HTML" class="text-white hover:text-cyan-300 font-medium">Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden flex items-center">
+        <label for="menu-toggle" class="cursor-pointer text-white">
+          <!-- Hamburger Icon -->
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" 
+               viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" 
+                  stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hidden Checkbox (for toggle) -->
+  <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+  <!-- Mobile Menu -->
+  <div class="hidden peer-checked:block md:hidden bg-blue-800 px-4 pb-4">
+    <a href="Home.HTML" class="block py-2 text-white hover:text-cyan-300">Home</a>
+    <a href="About.HTML" class="block py-2 text-white hover:text-cyan-300">About</a>
+    <a href="Services.HTML" class="block py-2 text-white hover:text-cyan-300">Services</a>
+    <a href="Contact.HTML" class="block py-2 text-white hover:text-cyan-300">Contact</a>
+  </div>
+</nav>
+
+
+    <!-- Services -->
+    <section id="services" class="py-20 md:py-28">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center">
+                <span class="text-blue-600 font-semibold uppercase tracking-wider">Our Expertise</span>
+                <h2 class="mt-2 text-3xl md:text-4xl font-bold text-blue-900">Comprehensive Technical Services</h2>
+                <p class="mt-4 mx-auto max-w-3xl text-lg text-gray-600">
+                    We offer a wide range of services designed to ensure quality, safety, and sustainability across your
+                    operations.
+                </p>
+            </div>
+
+            <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+                <!-- Card Template -->
+                <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow p-6 flex flex-col">
+                    <div class="bg-blue-100 p-3 rounded-full w-fit">
+                        <svg class="h-8 w-8 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M9.75 3v1.5M14.25 3v1.5M3 9.75h18M12 11.25v6M7.5 21h9a2.25 2.25 0 002.25-2.25v-12A2.25 2.25 0 0016.5 4.5h-9A2.25 2.25 0 005.25 6.75v12A2.25 2.25 0 007.5 21z" />
+                        </svg>
+                    </div>
+                    <h3 class="mt-4 font-semibold text-xl">NDT Inspection</h3>
+                    <p class="text-gray-600 mt-2">Advanced and conventional testing methods to ensure asset integrity
+                        without causing damage.</p>
+                    <ul class="list-disc list-inside text-sm text-gray-500 mt-4 space-y-1">
+                        <li>Conventional NDT (UT, RT, MT, PT, etc.)</li>
+                        <li>Advance NDT (PAUT, LRUT, AET, Drone, etc.)</li>
+                        <li>RLA, RBI, CA, FFS, Asset Integrity (AI)</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow p-6 flex flex-col">
+                    <div class="bg-blue-100 p-3 rounded-full w-fit">
+                        <svg class="h-8 w-8 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M9 12l2 2 4-4M7.5 21h9A2.25 2.25 0 0018.75 18.75v-13.5A2.25 2.25 0 0016.5 3h-9A2.25 2.25 0 005.25 5.25v13.5A2.25 2.25 0 007.5 21z" />
+                        </svg>
+                    </div>
+                    <h3 class="mt-4 font-semibold text-xl">Third-Party Inspection</h3>
+                    <p class="text-gray-600 mt-2">Independent and impartial inspection services to verify quality and
+                        compliance.</p>
+                    <ul class="list-disc list-inside text-sm text-gray-500 mt-4 space-y-1">
+                        <li>Vendor assessment</li>
+                        <li>Project inspection</li>
+                        <li>In-service inspection</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow p-6 flex flex-col">
+                    <div class="bg-blue-100 p-3 rounded-full w-fit">
+                        <svg class="h-8 w-8 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M12 6l3 7H9l3-7zm0 0v11" />
+                        </svg>
+                    </div>
+                    <h3 class="mt-4 font-semibold text-xl">Certification</h3>
+                    <p class="text-gray-600 mt-2">Reliable certification for products, processes, and personnel to meet
+                        global standards.</p>
+                    <ul class="list-disc list-inside text-sm text-gray-500 mt-4 space-y-1">
+                        <li>Product certification</li>
+                        <li>Process certification</li>
+                        <li>Personnel certification</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow p-6 flex flex-col">
+                    <div class="bg-blue-100 p-3 rounded-full w-fit">
+                        <svg class="h-8 w-8 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M12 9v2m0 4h.01m-.01-10a9 9 0 11-9 9 9 9 0 019-9z" />
+                        </svg>
+                    </div>
+                    <h3 class="mt-4 font-semibold text-xl">Risk Services</h3>
+                    <p class="text-gray-600 mt-2">Identify and mitigate hazards through comprehensive risk assessments.
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-gray-500 mt-4 space-y-1">
+                        <li>HAZOP, HAZID</li>
+                        <li>QRA (Quantitative Risk Assessment)</li>
+                        <li>SIL (Safety Integrity Level)</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow p-6 flex flex-col">
+                    <div class="bg-blue-100 p-3 rounded-full w-fit">
+                        <svg class="h-8 w-8 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <h3 class="mt-4 font-semibold text-xl">Safety Services</h3>
+                    <p class="text-gray-600 mt-2">Safety audits, assessments, and process safety to protect your people
+                        and operations.</p>
+                    <ul class="list-disc list-inside text-sm text-gray-500 mt-4 space-y-1">
+                        <li>Safety audits & assessments</li>
+                        <li>Site safety management</li>
+                        <li>Process safety consulting</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow p-6 flex flex-col">
+                    <div class="bg-blue-100 p-3 rounded-full w-fit">
+                        <svg class="h-8 w-8 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M9 12h6m-6 4h4m-4-8h2m7 4a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="mt-4 font-semibold text-xl">Consultancy</h3>
+                    <p class="text-gray-600 mt-2">Guidance in sustainability, energy, quality, IT, marketing, and
+                        business expansion.</p>
+                    <ul class="list-disc list-inside text-sm text-gray-500 mt-4 space-y-1">
+                        <li>Sustainability & Green Energy</li>
+                        <li>Project Management & DPR</li>
+                        <li>QA/QC, IT & CRM solutions</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow p-6 flex flex-col">
+                    <div class="bg-blue-100 p-3 rounded-full w-fit">
+                        <svg class="h-8 w-8 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M12 14l9-5-9-5-9 5 9 5zm0 0v6.5m-6-3.5h12" />
+                        </svg>
+                    </div>
+                    <h3 class="mt-4 font-semibold text-xl">Training</h3>
+                    <p class="text-gray-600 mt-2">Industry-leading training for NDT, inspection, project management and
+                        systems.</p>
+                    <ul class="list-disc list-inside text-sm text-gray-500 mt-4 space-y-1">
+                        <li>NDT & QA/QC training</li>
+                        <li>Inspection techniques</li>
+                        <li>Management systems</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-10 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">ARGen</h3>
+                <p>Technical solution providers offering Total Quality Assurance beyond traditional Testing, Inspection,
+                    and Certification.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-3">Our Services</h4>
+                <ul class="space-y-2 text-sm">
+                    <li>NDT Inspection</li>
+                    <li>Third-Party Inspection</li>
+                    <li>Certification</li>
+                    <li>Risk Services</li>
+                    <li>Safety Services</li>
+                    <li>Consultancy</li>
+                    <li>Training</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-3">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-3">Contact Information</h4>
+                <p>+91 9971364712 (Available 24/7)</p>
+                <p>argenicpl@gmail.com (Response within 24 hours)</p>
+                <p>Quality Assured</p>
+            </div>
+        </div>
+        <p class="text-center text-gray-500 mt-8 text-sm">© 2024 ARGen Inspection & Certification Private Limited. All
+            rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

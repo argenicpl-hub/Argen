@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARGen Inspection & Certification</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-slate-800">
+
+<!-- Navbar -->
+<nav class="bg-blue-900 fixed w-full z-10 top-0 left-0 shadow-md">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between items-center py-3">
+      
+      <!-- Logo + Name -->
+      <a href="Home.HTML" class="flex items-center">
+        <img src="Logo.png" alt="ARGEN Logo" class="h-10 w-auto">
+        <span class="ml-2 text-white font-bold text-lg">ARGEN Inspection & Certification Pvt. Ltd.</span>
+      </a>
+
+      <!-- Menu (Desktop) -->
+      <div class="hidden md:flex space-x-8">
+        <a href="Home.HTML" class="text-white hover:text-cyan-300 font-medium">Home</a>
+        <a href="About.HTML" class="text-white hover:text-cyan-300 font-medium">About</a>
+        <a href="Services.HTML" class="text-white hover:text-cyan-300 font-medium">Services</a>
+        <a href="Contact.HTML" class="text-white hover:text-cyan-300 font-medium">Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden flex items-center">
+        <label for="menu-toggle" class="cursor-pointer text-white">
+          <!-- Hamburger Icon -->
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" 
+               viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" 
+                  stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hidden Checkbox (for toggle) -->
+  <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+  <!-- Mobile Menu -->
+  <div class="hidden peer-checked:block md:hidden bg-blue-800 px-4 pb-4">
+    <a href="Home.HTML" class="block py-2 text-white hover:text-cyan-300">Home</a>
+    <a href="About.HTML" class="block py-2 text-white hover:text-cyan-300">About</a>
+    <a href="Services.HTML" class="block py-2 text-white hover:text-cyan-300">Services</a>
+    <a href="Contact.HTML" class="block py-2 text-white hover:text-cyan-300">Contact</a>
+  </div>
+</nav>
+
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-blue-900 to-blue-600 text-white text-center py-20 px-6">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            Technical Solutions Beyond Traditional Testing
+        </h1>
+        <p class="max-w-3xl mx-auto text-lg md:text-xl mb-8">
+            We are technical solution providers offering Total Quality Assurance beyond
+            traditional Testing, Inspection, and Certification. Partner with us to make
+            your business stronger, more resilient, and sustainable.
+        </p>
+        <div class="space-x-4">
+            <a href="Services.HTML" class="bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg shadow-md">Explore Our
+                Services</a>
+            <a href="Contact.HTML" class="border border-white px-6 py-3 rounded-lg">Get Consultation</a>
+        </div>
+    </header>
+
+    <!-- Positive Impact + Mission (Your Section) -->
+    <section class="py-20 bg-white px-6">
+        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-start">
+            <!-- Left Side -->
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800">
+                    Positive Impact for Industry & World
+                </h2>
+                <p class="mt-4 text-slate-500 text-lg">
+                    Every service we design and deliver has a positive impact on our clients, customers, industry, and
+                    the world. We are committed to positive change in industry, working with our clients to develop
+                    their systems and growth, maintain and enhance their value and reputation.
+                </p>
+                <div class="mt-8 space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="h-5 w-5 rounded-full border-4 border-purple-600 mt-1"></div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800">Technical Excellence</h4>
+                            <p class="text-slate-500">Highly skilled individuals and teams enabling businesses to
+                                overcome complex challenges</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="h-5 w-5 rounded-full border-4 border-cyan-400 mt-1"></div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800">Partnership Approach</h4>
+                            <p class="text-slate-500">We partner with clients in developing, implementing, maintaining
+                                and improving systems</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="h-5 w-5 rounded-full border-4 border-purple-600 mt-1"></div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800">Sustainable Solutions</h4>
+                            <p class="text-slate-500">Empowering companies to become stronger, more resilient and
+                                sustainable</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Side -->
+            <div>
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-800">Our Mission</h2>
+                <div class="mt-6 space-y-6">
+                    <div>
+                        <h4 class="text-cyan-500 font-semibold">What We Do</h4>
+                        <p class="text-slate-500">We are Technical Solution Providers offering Total Quality Assurance
+                            (TQA) beyond traditional Testing, Inspection, and Certification (TIC) services.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-purple-700 font-semibold">Our Purpose</h4>
+                        <p class="text-slate-500">Bringing Quality, Safety and Sustainability to industry culture
+                            through innovative and comprehensive technical solutions.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-cyan-500 font-semibold">Our Commitment</h4>
+                        <p class="text-slate-500">Supporting clients daily to overcome Process, Quality, Safety and
+                            Sustainability challenges while driving growth and excellence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get in Touch  -->
+    <section class="py-20 bg-slate-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800">
+                    Ready to Strengthen Your Business?
+                </h2>
+                <p class="mt-4 text-slate-500 text-lg">
+                    Partner with us to enhance your quality, safety, and sustainability. Let's discuss how we can
+                    support your growth and resilience.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Get in Touch -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border">
+                    <h3 class="text-xl font-semibold text-cyan-500">Get in Touch</h3>
+
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-slate-800">Services We Provide</h4>
+                        <ul class="list-disc list-inside text-slate-500 mt-2 space-y-1">
+                            <li>Non-Destructive Testing & Inspection</li>
+                            <li>Certification & Risk Assessment</li>
+                            <li>Safety Services & Consultancy</li>
+                            <li>Technical Training Programs</li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-6">
+                        <button
+                            class="w-full py-2 px-4 border rounded text-slate-800 font-semibold hover:bg-slate-100 transition">
+                            Request Consultation
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Why Choose Us -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border">
+                    <h3 class="text-xl font-semibold text-slate-800 mb-4">Why Choose Us?</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 h-4 w-4 rounded-full border-4 border-purple-600"></div>
+                            <span class="text-slate-600">Global technical expertise</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 h-4 w-4 rounded-full border-4 border-cyan-400"></div>
+                            <span class="text-slate-600">Comprehensive TQA solutions</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 h-4 w-4 rounded-full border-4 border-purple-600"></div>
+                            <span class="text-slate-600">Partnership-focused approach</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 h-4 w-4 rounded-full border-4 border-cyan-400"></div>
+                            <span class="text-slate-600">Sustainability commitment</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Quick Contact -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border">
+                    <h3 class="text-xl font-semibold text-slate-800 mb-4">Quick Contact</h3>
+                    <div class="space-y-3">
+                        <a href="mailto:argeniclpl@gmail.com" 
+                            class="flex items-center gap-2 px-4 py-2 border rounded-md text-cyan-600 hover:bg-cyan-50 transition">
+                            📧 <span>Email Inquiry</span>
+                        </a>
+                        <a href="tel:+919899884515" 
+                            class="flex items-center gap-2 px-4 py-2 border rounded-md text-pink-600 hover:bg-pink-50 transition">
+                            📞 <span>Schedule Call</span>
+                        </a>
+                        <a href="mailto:argeniclpl@gmail.com" 
+                            class="flex items-center gap-2 px-4 py-2 border rounded-md text-orange-600 hover:bg-orange-50 transition">
+                            📄 <span>Request Quote</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Industries We Serve -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border">
+                    <h3 class="text-xl font-semibold text-slate-800 mb-4">Industries We Serve</h3>
+                    <ul class="list-disc list-inside text-slate-500 space-y-1">
+                        <li>Oil & Gas</li>
+                        <li>Manufacturing</li>
+                        <li>Construction</li>
+                        <li>Energy</li>
+                        <li>Infrastructure</li>
+                        <li>More sectors worldwide</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+
+        .accordion-content.open {
+            max-height: 500px;
+            /* enough space for most answers */
+        }
+    </style>
+    <!-- FAQ -->
+    <section id="faq" class="py-20 md:py-28">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center">
+                <span class="text-blue-500 font-semibold uppercase tracking-wider">Help Center</span>
+                <h2 class="mt-2 text-3xl md:text-4xl font-bold text-blue-900">Frequently Asked Questions</h2>
+                <p class="mt-4 mx-auto max-w-3xl text-lg text-gray-600">
+                    Find answers to common questions about our services and company.
+                </p>
+            </div>
+
+            <div class="mt-12 max-w-3xl mx-auto space-y-4">
+                <!-- Accordion Items -->
+                <div class="border rounded-lg overflow-hidden">
+                    <button
+                        class="w-full text-left px-6 py-4 font-medium text-lg bg-white hover:bg-gray-50 accordion-trigger">
+                        What is Non-Destructive Testing (NDT)?
+                    </button>
+                    <div class="accordion-content px-6 py-0 bg-gray-50 text-gray-600 text-base">
+                        <p class="py-4">
+                            NDT includes various analysis techniques used to evaluate the properties of a material,
+                            component, or system without causing damage. It's crucial for ensuring safety and
+                            reliability in many industries.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="border rounded-lg overflow-hidden">
+                    <button
+                        class="w-full text-left px-6 py-4 font-medium text-lg bg-white hover:bg-gray-50 accordion-trigger">
+                        What industries do you serve?
+                    </button>
+                    <div class="accordion-content px-6 py-0 bg-gray-50 text-gray-600 text-base">
+                        <p class="py-4">
+                            We provide technical services to a wide range of industries, including oil and gas, power
+                            generation, manufacturing, infrastructure, aerospace, and more. Our solutions are tailored
+                            to the specific needs of each sector.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="border rounded-lg overflow-hidden">
+                    <button
+                        class="w-full text-left px-6 py-4 font-medium text-lg bg-white hover:bg-gray-50 accordion-trigger">
+                        How does your consultancy help with sustainability and green energy?
+                    </button>
+                    <div class="accordion-content px-6 py-0 bg-gray-50 text-gray-600 text-base">
+                        <p class="py-4">
+                            Our consultancy services guide businesses in adopting sustainable practices, transitioning
+                            to green energy sources like biomass and biogas, and navigating carbon credit systems. We
+                            help you reduce your environmental footprint while improving efficiency.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="border rounded-lg overflow-hidden">
+                    <button
+                        class="w-full text-left px-6 py-4 font-medium text-lg bg-white hover:bg-gray-50 accordion-trigger">
+                        Are your certifications internationally recognized?
+                    </button>
+                    <div class="accordion-content px-6 py-0 bg-gray-50 text-gray-600 text-base">
+                        <p class="py-4">
+                            Yes, our product, process, and personnel certifications are based on internationally
+                            recognized standards. This helps our clients gain access to global markets and demonstrate
+                            their commitment to quality and safety.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="border rounded-lg overflow-hidden">
+                    <button
+                        class="w-full text-left px-6 py-4 font-medium text-lg bg-white hover:bg-gray-50 accordion-trigger">
+                        How can I get a quote for a service?
+                    </button>
+                    <div class="accordion-content px-6 py-0 bg-gray-50 text-gray-600 text-base">
+                        <p class="py-4">
+                            You can get a quote by contacting us through the methods listed in our contact section. For
+                            a quick preliminary suggestion, you can also use our AI Service Suggester tool.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const triggers = document.querySelectorAll('.accordion-trigger');
+
+        triggers.forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const content = trigger.nextElementSibling;
+                const isOpen = content.classList.contains('open');
+
+                // Close all
+                document.querySelectorAll('.accordion-content').forEach(c => {
+                    c.classList.remove('open');
+                    c.style.paddingTop = '0';
+                    c.style.paddingBottom = '0';
+                });
+
+                // Open clicked if it wasn't open already
+                if (!isOpen) {
+                    content.classList.add('open');
+                    content.style.paddingTop = '1rem';
+                    content.style.paddingBottom = '1rem';
+                }
+            });
+        });
+    </script>
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-10 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">ARGen</h3>
+                <p>Technical solution providers offering Total Quality Assurance beyond traditional Testing, Inspection,
+                    and Certification.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-3">Our Services</h4>
+                <ul class="space-y-2 text-sm">
+                    <li>NDT Inspection</li>
+                    <li>Third-Party Inspection</li>
+                    <li>Certification</li>
+                    <li>Risk Services</li>
+                    <li>Safety Services</li>
+                    <li>Consultancy</li>
+                    <li>Training</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-3">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-3">Contact Information</h4>
+                <p>+91 9971364712 (Available 24/7)</p>
+                <p>argenicpl@gmail.com (Response within 24 hours)</p>
+                <p>Quality Assured</p>
+            </div>
+        </div>
+        <p class="text-center text-gray-500 mt-8 text-sm">© 2024 ARGen Inspection & Certification Private Limited. All
+            rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

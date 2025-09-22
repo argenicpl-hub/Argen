@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARGen Inspection & Certification</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-slate-800">
+
+<!-- Navbar -->
+<nav class="bg-blue-900 fixed w-full z-10 top-0 left-0 shadow-md">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between items-center py-3">
+      
+      <!-- Logo + Name -->
+      <a href="Home.HTML" class="flex items-center">
+        <img src="Logo.png" alt="ARGEN Logo" class="h-10 w-auto">
+        <span class="ml-2 text-white font-bold text-lg">ARGEN Inspection & Certification Pvt. Ltd.</span>
+      </a>
+
+      <!-- Menu (Desktop) -->
+      <div class="hidden md:flex space-x-8">
+        <a href="Home.HTML" class="text-white hover:text-cyan-300 font-medium">Home</a>
+        <a href="About.HTML" class="text-white hover:text-cyan-300 font-medium">About</a>
+        <a href="Services.HTML" class="text-white hover:text-cyan-300 font-medium">Services</a>
+        <a href="Contact.HTML" class="text-white hover:text-cyan-300 font-medium">Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden flex items-center">
+        <label for="menu-toggle" class="cursor-pointer text-white">
+          <!-- Hamburger Icon -->
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" 
+               viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" 
+                  stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hidden Checkbox (for toggle) -->
+  <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+  <!-- Mobile Menu -->
+  <div class="hidden peer-checked:block md:hidden bg-blue-800 px-4 pb-4">
+    <a href="Home.HTML" class="block py-2 text-white hover:text-cyan-300">Home</a>
+    <a href="About.HTML" class="block py-2 text-white hover:text-cyan-300">About</a>
+    <a href="Services.HTML" class="block py-2 text-white hover:text-cyan-300">Services</a>
+    <a href="Contact.HTML" class="block py-2 text-white hover:text-cyan-300">Contact</a>
+  </div>
+</nav>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 md:py-28">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center">
+                <span class="text-blue-600 font-semibold uppercase">Get in Touch</span>
+                <h2 class="mt-2 text-3xl md:text-4xl font-bold">We're Here to Help</h2>
+                <p class="mt-4 mx-auto max-w-3xl text-lg text-slate-500">
+                    Have a question or a project in mind? Reach out to us, and our team of experts will be happy to
+                    assist you.
+                </p>
+            </div>
+
+            <div class="mt-12 grid gap-8 md:grid-cols-3">
+                <!-- Email Card -->
+                <div
+                    class="bg-gray-50 border border-slate-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 mb-4">
+                        <!-- Email Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <h3 class="text-xl font-semibold">Email Us</h3>
+                    </div>
+                    <p class="text-slate-500 mb-1">Send your inquiries to our team.</p>
+                    <a href="mailto:argeniclpl@gmail.com" class="text-blue-600 font-semibold hover:underline break-all">
+                        argenicpl@gmail.com
+                    </a>
+                </div>
+
+                <!-- Phone Card -->
+                <div
+                    class="bg-gray-50 border border-slate-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 mb-4">
+                        <!-- Phone Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M2.003 5.884l2.122-.707a1 1 0 011.208.341l2.137 3.2a1 1 0 01-.192 1.293L6.232 11.4c.76 1.482 2.026 2.747 3.507 3.507l1.389-1.045a1 1 0 011.293-.192l3.2 2.137a1 1 0 01.341 1.208l-.707 2.122a1 1 0 01-.949.684C9.818 20 4 14.183 4 7.952c0-.432.275-.816.684-.949z" />
+                        </svg>
+                        <h3 class="text-xl font-semibold">Call Us</h3>
+                    </div>
+                    <p class="text-slate-500 mb-1">Speak with an expert directly.</p>
+                    <a href="tel:+919971364712" class="text-blue-600 font-semibold hover:underline">
+                        +91 99713 64712
+                    </a>
+                </div>
+
+                <!-- Address Card -->
+                <div
+                    class="bg-gray-50 border border-slate-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 mb-4">
+                        <!-- Location Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 11c1.657 0 3-1.343 3-3S13.657 5 12 5 9 6.343 9 8s1.343 3 3 3zm0 10c-3.866 0-7-4.03-7-7.5C5 10.462 8.582 7 12 7s7 3.462 7 6.5c0 3.47-3.134 7.5-7 7.5z" />
+                        </svg>
+                        <h3 class="text-xl font-semibold">Visit Us</h3>
+                    </div>
+                    <p class="text-slate-500 mb-1">Find our headquarters.</p>
+                    <p class="text-blue-600 font-semibold">
+                        D-38/8, Site B Industrial Area Rd, Block K, UPSIDC Site B,<br>
+                        UPSIDC, Greater Noida, Uttar Pradesh 201306
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maps -->
+    <section class="py-20 bg-slate-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">Find Us</h2>
+            <p class="text-slate-600 mb-8">Visit our office or reach out through the map below.</p>
+
+            <div class="rounded-lg overflow-hidden shadow-lg border">
+                <iframe class="w-full h-96" style="border:0;" loading="lazy" allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d634.6514686161308!2d77.50536817668979!3d28.508726686923026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cea4d8c13d4e3%3A0x505091ae6f1014f1!2sGeneral%20Equipment%20%26%20Engineering%20(Gen-EE)!5e0!3m2!1sen!2sit!4v1758464450985!5m2!1sen!2sit"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-10 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">ARGen</h3>
+                <p>Technical solution providers offering Total Quality Assurance beyond traditional Testing, Inspection,
+                    and Certification.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-3">Our Services</h4>
+                <ul class="space-y-2 text-sm">
+                    <li>NDT Inspection</li>
+                    <li>Third-Party Inspection</li>
+                    <li>Certification</li>
+                    <li>Risk Services</li>
+                    <li>Safety Services</li>
+                    <li>Consultancy</li>
+                    <li>Training</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-3">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-3">Contact Information</h4>
+                <p>+91 9971364712 (Available 24/7)</p>
+                <p>argenicpl@gmail.com (Response within 24 hours)</p>
+                <p>Quality Assured</p>
+            </div>
+        </div>
+        <p class="text-center text-gray-500 mt-8 text-sm">© 2024 ARGen Inspection & Certification Private Limited. All
+            rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

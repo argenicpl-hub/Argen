@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARGen Inspection & Certification</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-slate-800">
+
+<!-- Navbar -->
+<nav class="bg-blue-900 fixed w-full z-10 top-0 left-0 shadow-md">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between items-center py-3">
+      
+      <!-- Logo + Name -->
+      <a href="Home.HTML" class="flex items-center">
+        <img src="Logo.png" alt="ARGEN Logo" class="h-10 w-auto">
+        <span class="ml-2 text-white font-bold text-lg">ARGEN Inspection & Certification Pvt. Ltd.</span>
+      </a>
+
+      <!-- Menu (Desktop) -->
+      <div class="hidden md:flex space-x-8">
+        <a href="Home.HTML" class="text-white hover:text-cyan-300 font-medium">Home</a>
+        <a href="About.HTML" class="text-white hover:text-cyan-300 font-medium">About</a>
+        <a href="Services.HTML" class="text-white hover:text-cyan-300 font-medium">Services</a>
+        <a href="Contact.HTML" class="text-white hover:text-cyan-300 font-medium">Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden flex items-center">
+        <label for="menu-toggle" class="cursor-pointer text-white">
+          <!-- Hamburger Icon -->
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" 
+               viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" 
+                  stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hidden Checkbox (for toggle) -->
+  <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+  <!-- Mobile Menu -->
+  <div class="hidden peer-checked:block md:hidden bg-blue-800 px-4 pb-4">
+    <a href="Home.HTML" class="block py-2 text-white hover:text-cyan-300">Home</a>
+    <a href="About.HTML" class="block py-2 text-white hover:text-cyan-300">About</a>
+    <a href="Services.HTML" class="block py-2 text-white hover:text-cyan-300">Services</a>
+    <a href="Contact.HTML" class="block py-2 text-white hover:text-cyan-300">Contact</a>
+  </div>
+</nav>
+
+
+    <!-- About -->
+    <section id="about" class="py-20 md:py-28 bg-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid md:grid-cols-1 gap-12 lg:gap-16 items-center">
+                <div class="max-w-4xl mx-auto text-center">
+                    <span class="text-blue-600 font-semibold uppercase">Who We Are</span>
+                    <h2 class="mt-2 text-3xl md:text-4xl font-bold text-slate-800">
+                        Your Partner in Technical Excellence
+                    </h2>
+                    <p class="mt-4 text-lg text-slate-500">
+                        Argen Inspection and Certification is a premier technical service provider for industries
+                        worldwide. We move beyond traditional Testing, Inspection, and Certification (TIC) to offer
+                        Total Quality Assurance (TQA).
+                    </p>
+                    <p class="mt-4 text-lg text-slate-500">
+                        We partner with our clients to develop, implement, maintain, and improve their systems,
+                        processes, and procedures. Our highly skilled teams enable businesses to overcome the complex
+                        challenges they face in quality, safety, and sustainability.
+                    </p>
+                    <ul class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
+                        <li class="flex items-start gap-3">
+                            <!-- CheckCircle Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mt-1 flex-shrink-0"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2l4 -4M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10s-4.48 10 -10 10z" />
+                            </svg>
+                            <span class="text-slate-600">Develop, implement, and improve systems</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mt-1 flex-shrink-0"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2l4 -4M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10s-4.48 10 -10 10z" />
+                            </svg>
+                            <span class="text-slate-600">Empower businesses to be stronger and resilient</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mt-1 flex-shrink-0"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2l4 -4M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10s-4.48 10 -10 10z" />
+                            </svg>
+                            <span class="text-slate-600">Overcome complex Quality, Safety, and Sustainability
+                                challenges</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mt-1 flex-shrink-0"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2l4 -4M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10s-4.48 10 -10 10z" />
+                            </svg>
+                            <span class="text-slate-600">Provide Total Quality Assurance beyond traditional TIC</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="bg-slate-50 py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold text-blue-900">Why Choose Us</h3>
+            <p class="mt-4 text-slate-600 max-w-2xl mx-auto">
+                Every service we deliver has a positive impact on our clients, customers, industry, and world.
+            </p>
+
+            <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="p-6 bg-white rounded-lg shadow">
+                    <h4 class="font-semibold text-blue-700 mb-2">Comprehensive Services</h4>
+                    <p class="text-slate-600 text-sm">End-to-end solutions covering all aspects of technical assurance
+                        and quality services.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow">
+                    <h4 class="font-semibold text-blue-700 mb-2">Global Standards</h4>
+                    <p class="text-slate-600 text-sm">Compliance with international standards and best practices across
+                        all services.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow">
+                    <h4 class="font-semibold text-blue-700 mb-2">Innovation-Driven</h4>
+                    <p class="text-slate-600 text-sm">We leverage cutting-edge technology, robotics, and AI-powered
+                        inspection tools.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow">
+                    <h4 class="font-semibold text-blue-700 mb-2">Quality & Integrity</h4>
+                    <p class="text-slate-600 text-sm">An unwavering commitment to excellence in every project we
+                        undertake.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unique Selling Points -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-bold text-blue-900 text-center">Our Unique Strengths</h3>
+            <div class="mt-12 grid md:grid-cols-2 gap-8">
+                <div class="bg-slate-50 p-6 rounded-lg shadow">
+                    <h4 class="font-semibold text-lg text-slate-800 mb-2">Safer Inspections</h4>
+                    <p class="text-slate-600 text-sm">Use of drones, crawlers, and robotics to perform inspections in
+                        high-risk zones safely.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-lg shadow">
+                    <h4 class="font-semibold text-lg text-slate-800 mb-2">Green Energy & Sustainability</h4>
+                    <p class="text-slate-600 text-sm">Expertise in green energy, carbon credits, and waste-to-energy
+                        solutions for a sustainable future.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-lg shadow">
+                    <h4 class="font-semibold text-lg text-slate-800 mb-2">Integrated Solutions</h4>
+                    <p class="text-slate-600 text-sm">A one-stop partner covering inspection, certification,
+                        consultancy, and training.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-lg shadow">
+                    <h4 class="font-semibold text-lg text-slate-800 mb-2">Proven Expertise</h4>
+                    <p class="text-slate-600 text-sm">Trusted professionals delivering customized, industry-specific
+                        solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Customers -->
+    <section class="bg-slate-50 py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold text-blue-900">Industries We Serve</h3>
+            <p class="mt-4 text-slate-600 max-w-2xl mx-auto">
+                Our services are tailored for industries worldwide, from large enterprises to SMEs.
+            </p>
+            <div class="mt-10 grid md:grid-cols-3 gap-6">
+                <div class="p-6 bg-white rounded-lg shadow">
+                    <h4 class="font-semibold text-slate-800">Manufacturing Industries</h4>
+                    <p class="text-slate-600 text-sm mt-2">Automotive, electronics, machinery, food & beverages.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow">
+                    <h4 class="font-semibold text-slate-800">Construction & Infrastructure</h4>
+                    <p class="text-slate-600 text-sm mt-2">Civil engineering, real estate, roads, and buildings.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow">
+                    <h4 class="font-semibold text-slate-800">Startups & Exporters</h4>
+                    <p class="text-slate-600 text-sm mt-2">ISO certification, product testing, and global regulatory
+                        compliance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Team -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold text-blue-900">Meet Our Team</h3>
+            <p class="mt-4 text-slate-600 max-w-2xl mx-auto">
+                Leadership that drives innovation, integrity, and excellence in everything we do.
+            </p>
+            <div class="mt-12 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+                <!-- Ramanjee Jha -->
+                <div class="bg-slate-50 p-6 rounded-lg shadow text-center">
+                    <div
+                        class="h-32 w-32 mx-auto rounded-full bg-blue-200 flex items-center justify-center text-4xl font-bold text-blue-900">
+                        RJ
+                    </div>
+                    <h4 class="mt-4 text-xl font-semibold text-slate-800">Ramanjee Jha</h4>
+                    <p class="text-blue-600 font-medium">Founder & Director</p>
+                    <p class="mt-3 text-slate-600 text-sm">
+                        With 15+ years in quality assurance and inspection, Ramanjee leads ARGEN with a vision to
+                        redefine industry standards through innovation, sustainability, and customer trust.
+                    </p>
+                </div>
+
+                <!-- Anju Jha -->
+                <div class="bg-slate-50 p-6 rounded-lg shadow text-center">
+                    <div
+                        class="h-32 w-32 mx-auto rounded-full bg-purple-200 flex items-center justify-center text-4xl font-bold text-purple-900">
+                        AJ
+                    </div>
+                    <h4 class="mt-4 text-xl font-semibold text-slate-800">Anju Jha</h4>
+                    <p class="text-blue-600 font-medium">Co-Founder & Director</p>
+                    <p class="mt-3 text-slate-600 text-sm">
+                        Anju brings strong leadership and business expertise, ensuring ARGEN’s growth strategy, client
+                        partnerships, and value-driven approach remain aligned with our mission.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-10 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">ARGen</h3>
+                <p>Technical solution providers offering Total Quality Assurance beyond traditional Testing, Inspection,
+                    and Certification.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-3">Our Services</h4>
+                <ul class="space-y-2 text-sm">
+                    <li>NDT Inspection</li>
+                    <li>Third-Party Inspection</li>
+                    <li>Certification</li>
+                    <li>Risk Services</li>
+                    <li>Safety Services</li>
+                    <li>Consultancy</li>
+                    <li>Training</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-3">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-3">Contact Information</h4>
+                <p>+91 9971364712 (Available 24/7)</p>
+                <p>argenicpl@gmail.com (Response within 24 hours)</p>
+                <p>Quality Assured</p>
+            </div>
+        </div>
+        <p class="text-center text-gray-500 mt-8 text-sm">© 2024 ARGen Inspection & Certification Private Limited. All
+            rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
